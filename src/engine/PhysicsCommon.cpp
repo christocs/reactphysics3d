@@ -496,6 +496,10 @@ void PhysicsCommon::destroyDefaultLogger(DefaultLogger* logger) {
    mDefaultLoggers.remove(logger);
 }
 
+void PhysicsCommon::setLogger(Logger* logger) {
+    mLogger = logger;
+}
+
 // If profiling is enabled
 #ifdef IS_RP3D_PROFILING_ENABLED
 

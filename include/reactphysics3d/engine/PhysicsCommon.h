@@ -201,9 +201,9 @@ inline Logger* PhysicsCommon::getLogger() {
 /**
  * @param logger A pointer to the logger to use
  */
-inline void PhysicsCommon::setLogger(Logger* logger) {
-    mLogger = logger;
-}
+//inline void PhysicsCommon::setLogger(Logger* logger) {
+//    mLogger = logger;
+//}
 
 // Use this macro to log something
 #define RP3D_LOG(physicsWorldName, level, category, message, filename, lineNumber) if (reactphysics3d::PhysicsCommon::getLogger() != nullptr) PhysicsCommon::getLogger()->log(level, physicsWorldName, category, message, filename, lineNumber)
